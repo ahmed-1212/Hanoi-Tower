@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hanoi Tower</title>
+</head>
+<body style="background: url(images/pexels-photo-1658747.jpeg)center center no-repeat">
+    
+    <div class="over"></div>
+    
+    <div id="app">
+        <div class="welcome">
+            <h1>Welcome To Hanoi Tower Puzzle Game <img src="images/jigsaw.png" alt="puzzle"></h1>
+            <h3>The Rules</h3>
+            <ul>
+                <li>1-Cant Move The Disk 2 Towers At A Time</li>
+                <li>2-Cant Choose From The Bottom Of The Tower</li>
+                <li>3-Cant But A Big Disk On Top A Small Disk</li>
+                <li>4-Your Goal to Move The Three Disk From Tower 1 To Tower 3 In The Same Order In <span>{{moves}}</span> Moves</li>
+            </ul>
+        </div>
+        <div class="hanoy-tower">
+            <div class="tower tower1">
+                    <div class="disk small" data-disk="small"></div>
+                    <div class="disk medium" data-disk="medium"></div>
+                    <div class="disk large" data-disk="large"></div>
+                <span class="bottom"><span class="text">Tower 1</span></span>
+            </div>
+            <div class="tower tower2">
+                    <div class="disk small" data-disk="small"></div>
+                    <div class="disk medium" data-disk="medium"></div>
+                    <div class="disk large" data-disk="large"></div>
+                <span class="bottom"><span class="text">Tower 2</span></span>
+            </div>
+            <div class="tower tower3">
+                    <div class="disk small" data-disk="small"></div>
+                    <div class="disk medium" data-disk="medium"></div>
+                    <div class="disk large" data-disk="large"></div>
+                <span class="bottom"><span class="text">Tower 3</span></span>
+            </div>
+        </div>
+
+        <div class="hanoi">
+            <div class="massege">
+                <h3>Yes You Did It In {{finishingMove}} Move</h3>
+                <p>Reload The Page To Play Again</p>
+                <button>OK</button>
+            </div>
+        </div>
+        <div class="hanoi-lost">
+            <div class="massege">
+                <h3>Game Over</h3>
+                <p>Reload The Page To Play Again</p>
+                <button>OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/jquery-3.2.1.min (1).js"></script>
+    <script src="js/plugin.js"></script>
+</body>
+</html>
